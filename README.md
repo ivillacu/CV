@@ -1,4 +1,0 @@
-CV
-==
-
-ivillacu's CV
