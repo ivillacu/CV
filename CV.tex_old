@@ -1,0 +1,139 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[a4paper,10pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{multicol}
+\renewcommand{\refname}{Publicaciones}
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ignacio}
+\familyname{Villacura de la Paz}
+\title{Egresado Ingenier\'ia Civil Inform\'atica}               % optional, remove the line if not wanted
+\address{San Guillermo 852, Dpto 404}{Valpara\'iso}    % optional, remove the line if not wanted
+\mobile{+56 9 85294765}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ivillacu@inf.utfsm.cl}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{Foto.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+\vspace{-30pt}
+\begin{center}
+    Tengo interés por las nuevas tecnologías y la entretención digital. Actualmente, mi memoria de pregado es sobre la utilización de \emph{gamification} en ventas online.
+ \end{center}
+\section{Datos Personales}
+\cvline{Rut:}{16.792.342-9}
+\cvline{Nacimiento:}{19 Enero 1988}
+\cvline{Estado Civil:}{Soltero}
+\cvline{Colegio:}{Colegio Concepción, Parral, Chile}
+\cvline{Universidad:}{Universidad Técnica Federico Santa Maria, Valparaíso, Chile}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Experiencia Laboral}
+%\subsection{Vocational}
+\cventry{2008 - 2014}{Ayudantías}{Depto. Informática}{UTFSM}{}{Lab. de Computación, Programación, Taller de Sistemas Computacionales}
+\cventry{2009 - 2013}{Programador/Diseñador}{USMGames}{UTFSM}{}{Co-Fundador de esta iniciativa estudiantil. Aporte con diseño y desarrollo de video juegos en los proyectos.}%
+\cventry{2010}{Jefe de Proyecto}{PieA}{UTFSM}{}{Proyecto de investigación en ARM para la creación de micro-computadores}%
+%\cventry{Verano 2010 - 2011}{Práctica industrial}{Mazorca Studios}{}{}{Investigación de Unreal Engine 3 para proyectos venideros.}%
+\cventry{2010 - 2011}{Programador}{Brainstormers}{}{}{Programación y diseño de video juegos.}%
+\cventry{2011 - 2013}{Ayudante Python}{LIRAE}{UTFSM}{}{Ayudante corrector de cursos de lenguage python}%
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+
+\subsection{Prácticas}
+\cventry{2010 - 2011}{Práctica industrial}{Mazorca Studios}{}{}{Investigación de Unreal Engine 3 para nuevos proyectos.}%
+\cventry{2011 - 2012}{Práctica profesional}{Guitar Boost SpA}{}{}{Programación y ayuda en el diseño del software Guitar Boost.}%
+\begin{multicols}{2}
+
+\section{Intereses}
+\cvline{Video Juegos}{Diseño y desarrollo}
+\cvline{Gamification}{Formas de utilizar ideas de juegos en la vida cotidiana}
+
+\section{Idioma}
+\cvline{Ingles}{Avanzado, TOEIC $935$}
+
+\end{multicols}
+
+%\cvlanguage{Language 2}{Skill level}{Comment}
+
+\section{Computaci\'on}
+\cvcomputer{Programaci\'on}{C, Java, Python, PHP, .NET}{Servicios}{Git, eCommerce}
+\cvcomputer{Engines}{Unity3D} {S.O}{Windows, Linux}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\section{Recomendaciones}
+\cventry{Horst v. Brand}{Profesor}{Depto. Inform\'atica}{UTFSM}{vonbrand@inf.utfsm.cl}{}
+\cventry{Cecilia Reyes}{Profesora}{Depto. Inform\'atica}{UTFSM}{reyes@inf.utfsm.cl}{}
+%\cvline{}{}
+%\cvline{hobby 3}{\small Description}
+
+%\section{Pretensión de renta}                                                                   
+%\cvline{Sueldo Liquido}{ $\$1.000.000$ }                                                                 
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publicaciones}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

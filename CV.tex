@@ -1,0 +1,155 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[a4paper,10pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{multicol}
+\renewcommand{\refname}{Publicaciones}
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ignacio}
+\familyname{Villacura de la Paz}
+\title{Egresado Ingeniería Civil Informática}               % optional, remove the line if not wanted
+\address{San Guillermo 852, Dpto 404}{Valparaíso}    % optional, remove the line if not wanted
+\mobile{+56 9 85294765}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ivillacu@inf.utfsm.cl}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{Foto.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+\vspace{-30pt}
+\begin{center}
+    Mi principal interés actualmente está enfocado en las nuevas tecnologías,
+    sobre todo en la entrentención digital.
+    Actualmente, me encuentro desarrollando mi memoria de pregrado la cual trata
+    sobre la aplicación de \emph{gamification} en sistemas de ventas on-line.
+ \end{center}
+\section{Datos Personales}
+\cvcomputer{Rut}{16.792.342-9}
+           {Nacimiento}{19 de Enero 1988}
+\cvcomputer{Estado Civil:}{Soltero}
+           {Colegio:}{Colegio Concepción, Parral}
+\cvcomputer{Universidad:}{Universidad Técnica Federico Santa Maria, Valparaíso}
+           {}{}
+
+\section{Experiencia Laboral}
+
+\cventry{2008 -- 2014}
+        {Ayudantías}
+        {Departamento Informática}
+        {UTFSM}
+        {}
+        {Laboratorio de Computación, Programación, Taller de Sistemas Computacionales.}
+
+\cventry{2009 -- 2013}
+        {Programador y Diseñador}
+        {USMGames}
+        {UTFSM}
+        {Co-Fundador de USMGames, grupo de investigación y desarrollo de video
+        juegos, parte del Programa de Iniciativas Estudiantiles Académicas (PIE>A).
+        Mi participación se centró en el Diseño y Desarrollo de video juegos
+        en los distintos proyectos de la iniciativa.}
+        {\url{http://usmgames.cl}, \url{http://www.piea.usm.cl}}
+
+\cventry{2010}
+        {Jefe de Proyecto}
+        {PIE>A}
+        {UTFSM}
+        {}
+        {A cargo del proyecto titulado: \emph{``Proyecto de investigación en ARM
+        para la creación de micro-computadores''}, el cual realizó variados
+        proyectos basados en sistemas ARM (BeagleBoard), desarrollando un
+        reproductor multimedia, sistemas de información en tiempo real, etc.}
+
+\cventry{2010 -- 2011}
+        {Programador}
+        {Brainstormers}
+        {}
+	{}
+        {Ayuda en la programación de una novela grafica en Renpy. Tambien se diseño
+	un nuevo juego para la empresa.}
+
+\cventry{2011 -- 2013}
+        {Ayudante Curso de Programación en Python}
+        {Laboratory of Interdisciplinary Research in Astro Engineering (LIRAE)}
+        {UTFSM}
+        {\url{http://www.lirae.cl}}
+        {A cargo de la corrección de las actividades evaluadas de un curso
+        de programación a miembros del proyecto Atacama Large Millimeter/submillimeter
+        Array (ALMA).}
+
+\subsection{Prácticas}
+
+\cventry{2010 -- 2011}
+        {Práctica industrial}
+        {Mazorca Studios}
+        {}
+        {}
+        {Investigación de Unreal Engine 3 para nuevos proyectos.}%
+
+\cventry{2011 -- 2012}
+        {Práctica profesional}
+        {Guitar Boost SpA}
+        {}
+        {}
+        {Programación y ayuda en el diseño del software Guitar Boost.}%
+
+\section{Intereses}
+\cvcomputer{Video Juegos}{Diseño y desarrollo. La utilizacion de video juegos 
+	   en la vida cotidiana para acercar a la gente y entretenerla es por lo 
+           que me interesa esta area de entretencion digital. La utilizacion de 
+	   nuevas tecnologias es lo que me atrae a esta area.}
+           {Gamification}{La utilizacion de elementos de diseño de juegos en otros 
+	   contextos. Esta es una tecnica moderna para atraer y retener clientes 
+           o usuarios utilizada mayormente en marketing y ventas. Mi interes es en
+           la utilizacion de esta tecnica para ayudar Pymes.}
+
+\section{Idioma}
+\cvlanguage{Inglés}{Avanzado}{TOEIC $935$ EL AÑO ACÁ}
+
+\section{Computaci\'on}
+\cvcomputer{Programaci\'on}{C, Java, Python, PHP, .NET}{Servicios}{Git, eCommerce}
+\cvcomputer{Engines}{Unity3D} {S.O}{Windows, Linux}
+
+\section{Recomendaciones}
+\cventry{}{Horst von Brand}
+        {Profesor, Departamento de Informática}{UTFSM}{vonbrand@inf.utfsm.cl}{}
+\cventry{}{Cecilia Reyes}
+        {Profesora, Departamento de Informática}{UTFSM}{reyes@inf.utfsm.cl}{}
+
+\end{document}
