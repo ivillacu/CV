@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[letter,10pt]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ignacio}
+\familyname{Villacura de la Paz}
+\title{Computer Engineer}               % optional, remove the line if not wanted
+\address{San Guillermo 852, Dpto 404}{Valparaíso}    % optional, remove the line if not wanted
+\mobile{+56 9 85294765}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ivillacu@inf.utfsm.cl}                      % optional, remove the line if not wanted
+%\homepage{homepage (optional)}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{Foto.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+\vspace{-20pt}
+\begin{center}
+    My actual interest are focus on learning new technologies, digital entertainment,
+    ecommerce and the back-end devolopment of computer systems.
+
+%\emph{Gamification} y el desarrollo
+ %   de videojuegos son los temas que me atraen actualmente.
+ \end{center}
+\section{Personal information}
+\cvcomputer{Rut:}{16.792.342-9}
+           {Date of birth:}{19 de Enero 1988}
+\cvcomputer{Universidad:}{Universidad Técnica Federico Santa María, Valparaíso}
+           {}{}
+
+\section{Work experience}
+
+\cventry{Today}
+        {Back-end Developer}
+        {Phineal SpA}
+        {Santiago}
+        {}
+        {Programming systems on PHP used in solar energy.}
+
+\cventry{2008 -- 2014}
+        {Assitantships}
+        {Computer science department}
+        {UTFSM}
+        {}
+        {Computer lab, Programming class, Computer systems workshop.}
+
+\cventry{2009 -- 2013}
+        {Developer and Design}
+        {USMGames}
+        {UTFSM}
+        {Co-Founder of USMGames, a student initiative that research and develop videogames.
+	 It is part of the program of students initiatives (PIE>A).
+	 My work was to design and develop new ideas on python or XNA engine.}
+        {\url{http://usmgames.cl}, \url{http://www.piea.usm.cl}}
+
+\cventry{2010}
+        {Proyect Leader}
+        {PIE>A}
+        {UTFSM}
+        {}
+        {In charge of the proyect: \emph{``Proyecto de investigación en ARM
+        para la creación de micro-computadores''}. This proyect research an developed
+        small proyect using a ARM system (BeagleBoard). We developed a multimedia center, 
+	a real time information system for emergencies.}
+
+\cventry{2011 -- 2013}
+        {Assitant for Python programming language course}
+        {Laboratory of Interdisciplinary Research in Astro Engineering (LIRAE)}
+        {UTFSM}
+        {\url{http://www.lirae.cl}}
+        {In charge of the corrections on the assignmets given to the students from the
+        Atacama Large Millimeter/submillimeter Array (ALMA).}
+
+\cventry{2015}
+        {Trainee}
+        {Tinet Soluciones Informáticas S.A.}
+        {Valparaíso}
+        {\url{http://www.tinet.cl}}
+        {Course \emph{``Aplicación del lenguaje de programación java estandar''}. Course that teach about the 
+	 developing in Java JEE for enterprise applications.}
+
+\section{Interest}
+\cvcomputer{Videogames}{Design and develop. I like the use of videogames in 
+	   		daily life situation.}
+           {Gamification}{Use the various elements from de design of videogames on non-game context.}
+			  
+\cvcomputer{E-commerce}{Implement ecommerce systems for small business.}
+	   {Web development}{Learn new web technologies.}
+
+\section{Languages}
+\cvlanguage{English}{Advance}{TOEIC $935$ $2012$}
+
+\section{Computer Skills}
+\cvcomputer{Programming}{C, JEE, Python, PHP}{Repositories}{Git, SVN}
+
+\section{Recomendations}
+\cventry{}{Horst von Brand}
+        {Professor, Computer Science Department}{UTFSM}{vonbrand@inf.utfsm.cl}{}
+\cventry{}{Cecilia Reyes}
+        {Professor, Computer Science Department}{UTFSM}{reyes@inf.utfsm.cl}{}
+
+%\section{Pretensión de renta}
+%\cventry{Renta liquida}{$\$850.000$}{}{}{}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}                                                                           
+\bibliographystyle{plain}                                                            
+\bibliography{publicaciones}       % 'publications' is the name of a BibTeX file
+
+\end{document}
